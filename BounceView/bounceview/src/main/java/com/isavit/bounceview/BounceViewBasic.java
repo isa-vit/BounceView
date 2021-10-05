@@ -27,9 +27,8 @@ public class BounceViewBasic extends RelativeLayout {
      * Core Components
      */
 
+    RelativeLayout header, body;
     TextView textBox;
-    View alphaLayer;
-
 
     /**
      * Attributes
@@ -39,7 +38,6 @@ public class BounceViewBasic extends RelativeLayout {
     Drawable background;
     String text;
     float padding;
-    // Float animationDuration;
 
     private void initView() {
         this.view = this;
@@ -57,15 +55,15 @@ public class BounceViewBasic extends RelativeLayout {
         background = arr.getDrawable(R.styleable.BounceViewBasic_background);
         text = arr.getString(R.styleable.BounceViewBasic_android_text);
         padding = arr.getDimension(R.styleable.BounceViewBasic_android_padding, 0);
-        // animationDuration = arr.getDimension(R.styleable.BounceViewBasic_android_padding, 0);
 
         //components
         textBox = findViewById(R.id.text_box);
-//        alphaLayer = findViewById(R.id.view);
+        header = findViewById(R.id.header);
+        body = findViewById(R.id.body);
 
         arr.recycle();
     }
-    
+
 
     public BounceViewBasic(Context context) {
         super(context);
