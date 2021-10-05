@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    The classname should match the stylable name-->
+    
+    <declare-styleable name="BounceViewBasic">
+        <attr name="gradient" format="reference"/>
+        <attr name="background" format="reference"/>
+        <attr name="android:text" format="string"/>
+        <attr name="android:padding" format="integer"/>
+<!--        <attr name="android:animationDuration" format="float"/>-->
+
+    </declare-styleable>
+
+</resources>
